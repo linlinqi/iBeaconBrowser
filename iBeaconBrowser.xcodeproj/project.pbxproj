@@ -22,6 +22,10 @@
 		3DA6DFA417D0ABA100309165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA6DF8317D0ABA100309165 /* UIKit.framework */; };
 		3DA6DFAC17D0ABA100309165 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6DFAA17D0ABA100309165 /* InfoPlist.strings */; };
 		3DA6DFAE17D0ABA100309165 /* iBeaconBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6DFAD17D0ABA100309165 /* iBeaconBrowserTests.m */; };
+		3DA6DFB817D0ABAB00309165 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA6DFB717D0ABAB00309165 /* CoreLocation.framework */; };
+		3DA6DFBA17D0ABB100309165 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA6DFB917D0ABB100309165 /* CoreBluetooth.framework */; };
+		3DA6DFC317D0ABD600309165 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6DFC017D0ABD600309165 /* fishhook.c */; };
+		3DA6DFC417D0ABD600309165 /* QuietAssertMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6DFC217D0ABD600309165 /* QuietAssertMacros.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,11 @@
 		3DA6DFA917D0ABA100309165 /* iBeaconBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBeaconBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		3DA6DFAB17D0ABA100309165 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3DA6DFAD17D0ABA100309165 /* iBeaconBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBeaconBrowserTests.m; sourceTree = "<group>"; };
+		3DA6DFB717D0ABAB00309165 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3DA6DFB917D0ABB100309165 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3DA6DFC017D0ABD600309165 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		3DA6DFC117D0ABD600309165 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		3DA6DFC217D0ABD600309165 /* QuietAssertMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuietAssertMacros.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA6DFBA17D0ABB100309165 /* CoreBluetooth.framework in Frameworks */,
+				3DA6DFB817D0ABAB00309165 /* CoreLocation.framework in Frameworks */,
 				3DA6DF8217D0ABA100309165 /* CoreGraphics.framework in Frameworks */,
 				3DA6DF8417D0ABA100309165 /* UIKit.framework in Frameworks */,
 				3DA6DF8017D0ABA100309165 /* Foundation.framework in Frameworks */,
@@ -103,6 +114,8 @@
 		3DA6DF7E17D0ABA100309165 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DA6DFB917D0ABB100309165 /* CoreBluetooth.framework */,
+				3DA6DFB717D0ABAB00309165 /* CoreLocation.framework */,
 				3DA6DF7F17D0ABA100309165 /* Foundation.framework */,
 				3DA6DF8117D0ABA100309165 /* CoreGraphics.framework */,
 				3DA6DF8317D0ABA100309165 /* UIKit.framework */,
@@ -129,6 +142,9 @@
 		3DA6DF8617D0ABA100309165 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DA6DFC017D0ABD600309165 /* fishhook.c */,
+				3DA6DFC117D0ABD600309165 /* fishhook.h */,
+				3DA6DFC217D0ABD600309165 /* QuietAssertMacros.c */,
 				3DA6DF8717D0ABA100309165 /* iBeaconBrowser-Info.plist */,
 				3DA6DF8817D0ABA100309165 /* InfoPlist.strings */,
 				3DA6DF8B17D0ABA100309165 /* main.m */,
@@ -255,6 +271,8 @@
 			files = (
 				3DA6DF9917D0ABA100309165 /* ViewController.m in Sources */,
 				3DA6DF9017D0ABA100309165 /* AppDelegate.m in Sources */,
+				3DA6DFC417D0ABD600309165 /* QuietAssertMacros.c in Sources */,
+				3DA6DFC317D0ABD600309165 /* fishhook.c in Sources */,
 				3DA6DF8C17D0ABA100309165 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
