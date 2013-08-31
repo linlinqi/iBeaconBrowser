@@ -90,6 +90,7 @@
     switch (beacon.proximity) {
         case CLProximityImmediate:
             cell.detailTextLabel.text = @"Immediate";
+            // TODO: do something when the device becomes this close
             break;
             
         case CLProximityNear:
